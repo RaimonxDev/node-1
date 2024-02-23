@@ -34,8 +34,9 @@ export const register = async ({ nombreAnimal, edad, tipo, color, enfermedad }) 
 export const read = async () => {
   try {
     const data = await getData()
-      data.forEach(data => {
-      console.table(`Nombre: ${data.nombre}, 
+    data.length && data.forEach(data => {
+      console.table(`
+      Nombre: ${data.nombre}, 
       Edad: ${data.edad}, 
       Tipo: ${data.tipo}, 
       Color: ${data.color}, 
