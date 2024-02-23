@@ -44,7 +44,7 @@ export const read = async () => {
     });
   }
   catch (error) {
-    console.error('Error al leer el archivo', error);
+    console.error('No existe ningun registro creado', error);
   }
 }
 
